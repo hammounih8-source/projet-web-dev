@@ -1,0 +1,12 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_table" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A0522D" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#A0522D" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg_table)" rx="14"/>
+  <rect width="400" height="300" fill="none" stroke="#A0522D" stroke-opacity="0.2" stroke-width="2" rx="14"/>
+  <ellipse cx="200" cy="110" rx="160" ry="20" fill="#d4a96a"/><rect x="30" y="105" width="340" height="15" rx="5" fill="#c9935a"/><rect x="50" y="120" width="20" height="80" rx="5" fill="#a0724a"/><rect x="330" y="120" width="20" height="80" rx="5" fill="#a0724a"/><rect x="100" y="120" width="20" height="80" rx="5" fill="#a0724a"/><rect x="280" y="120" width="20" height="80" rx="5" fill="#a0724a"/>
+  <text x="200" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#A0522D" font-weight="bold">Table de salon</text>
+</svg>

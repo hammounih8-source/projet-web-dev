@@ -1,0 +1,12 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_lit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B8E9F" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6B8E9F" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg_lit)" rx="14"/>
+  <rect width="400" height="300" fill="none" stroke="#6B8E9F" stroke-opacity="0.2" stroke-width="2" rx="14"/>
+  <rect x="20" y="80" width="360" height="140" rx="15" fill="#e8e0d0"/><rect x="20" y="80" width="90" height="140" rx="15" fill="#d4c5b0"/><rect x="50" y="95" width="40" height="60" rx="8" fill="#e8e0d0"/><rect x="60" y="130" width="280" height="80" rx="10" fill="#f0ece4"/><rect x="80" y="105" width="60" height="30" rx="6" fill="#d4af37"/><rect x="160" y="105" width="60" height="30" rx="6" fill="#d4af37"/><rect x="240" y="105" width="60" height="30" rx="6" fill="#d4af37"/>
+  <text x="200" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#6B8E9F" font-weight="bold">Lit double</text>
+</svg>

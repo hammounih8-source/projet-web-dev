@@ -1,0 +1,12 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg_chaise" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B7355" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#8B7355" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg_chaise)" rx="14"/>
+  <rect width="400" height="300" fill="none" stroke="#8B7355" stroke-opacity="0.2" stroke-width="2" rx="14"/>
+  <rect x="100" y="120" width="200" height="15" rx="6" fill="#c9935a"/><rect x="100" y="135" width="200" height="80" rx="8" fill="#d4a97c"/><rect x="100" y="60" width="15" height="75" rx="5" fill="#a0724a"/><rect x="285" y="60" width="15" height="75" rx="5" fill="#a0724a"/><rect x="100" y="215" width="15" height="50" rx="5" fill="#a0724a"/><rect x="285" y="215" width="15" height="50" rx="5" fill="#a0724a"/>
+  <text x="200" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#8B7355" font-weight="bold">Chaise moderne</text>
+</svg>

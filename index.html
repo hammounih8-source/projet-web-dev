@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HM MOBILIER, site de vente de mobilier avec catalogue, réservation, inscription et connexion." />
+  <title>HM MOBILIER | Accueil</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="brand" href="#" data-page="home">HM MOBILIER</a>
+      <ul class="nav-links">
+        <li><a href="#" data-page="home">Accueil</a></li>
+        <li><a href="#" data-page="productsPage">Biens</a></li>
+        <li><a href="#" data-page="reservation">Réservation</a></li>
+        <li id="nav-login-item"><a href="#" data-page="login">Connexion</a></li>
+        <li id="nav-register-item"><a href="#" data-page="register">Inscription</a></li>
+        <li id="nav-user-item" style="display:none;">
+          <span class="user-badge">👤 <span id="nav-username"></span></span>
+          <a href="#" id="btn-logout">Déconnexion</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section id="home" class="page active">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Mobilier moderne et pratique</p>
+          <h1>Bienvenue chez HM MOBILIER</h1>
+          <p class="hero-text">Découvrez nos meubles, réservez facilement et gérez votre compte en quelques clics.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn primary" data-page="productsPage">Voir les biens</a>
+            <a href="#" class="btn secondary" data-page="register">Créer un compte</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-band">
+        <article>
+          <strong>6+</strong>
+          <span>meubles disponibles</span>
+        </article>
+        <article>
+          <strong>3</strong>
+          <span>catégories</span>
+        </article>
+        <article>
+          <strong>24h</strong>
+          <span>réponse rapide</span>
+        </article>
+      </section>
+
+      <section class="section intro-section">
+        <div class="section-title">
+          <p class="eyebrow">Pourquoi nous choisir</p>
+          <h2>Un site simple et interactif</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span>⌂</span>
+            <h3>Catalogue dynamique</h3>
+            <p>Filtre les meubles par catégorie en un seul clic.</p>
+          </article>
+          <article class="feature-card">
+            <span>✓</span>
+            <h3>Formulaires validés</h3>
+            <p>Inscription, connexion et réservation avec contrôle des données.</p>
+          </article>
+          <article class="feature-card">
+            <span>◇</span>
+            <h3>Réservation rapide</h3>
+            <p>Choisis un meuble et envoie une demande de réservation facilement.</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+   
+    <section id="productsPage" class="page section">
+      <div class="section-title">
+        <p class="eyebrow">Nos biens</p>
+        <h2>Catalogue des meubles</h2>
+      </div>
+      <div class="filters">
+        <button type="button" class="filter-btn active" data-filter="all">Tous</button>
+        <button type="button" class="filter-btn" data-filter="salon">Salon</button>
+        <button type="button" class="filter-btn" data-filter="chambre">Chambre</button>
+        <button type="button" class="filter-btn" data-filter="bureau">Bureau</button>
+      </div>
+      <div id="products" class="products-grid"></div>
+    </section>
+
+    
+    <section id="reservation" class="page section">
+      <div class="section-title">
+        <p class="eyebrow">Réservation</p>
+        <h2>Réserver un meuble</h2>
+      </div>
+      <p id="selectedProductInfo" class="selected-info">Aucun produit sélectionné.</p>
+      <form id="orderForm" class="form-card" novalidate>
+        <label for="clientName">Votre nom</label>
+        <input type="text" id="clientName" placeholder="Ex: Ahmed Meziane" required />
+
+        <label for="clientPhone">Votre téléphone</label>
+        <input type="tel" id="clientPhone" placeholder="Ex: 0551234567" required />
+        <small class="hint">Format : 05, 06 ou 07 suivi de 8 chiffres</small>
+
+        <label for="productSelect">Meuble choisi</label>
+        <select id="productSelect" required></select>
+
+        <label for="clientCity">Votre ville</label>
+        <input type="text" id="clientCity" placeholder="Ex: Tizi-Ouzou" required />
+
+        <label for="visitDate">Date de visite</label>
+        <input type="date" id="visitDate" required />
+        <small class="hint">La date doit être dans le futur</small>
+
+        <button type="submit">Valider la réservation</button>
+        <p id="msgOrder" role="alert"></p>
+      </form>
+    </section>
+
+    
+    <section id="login" class="page section">
+      <div class="section-title">
+        <p class="eyebrow">Connexion</p>
+        <h2>Se connecter</h2>
+      </div>
+      <form id="loginForm" class="form-card" novalidate>
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="exemple@email.com" required />
+
+        <label for="loginPassword">Mot de passe</label>
+        <input type="password" id="loginPassword" placeholder="Votre mot de passe" required />
+
+        <button type="submit">Connexion</button>
+        <p id="msgLogin" role="alert"></p>
+        <p class="form-link">Pas encore de compte ? <a href="#" data-page="register">S'inscrire</a></p>
+      </form>
+    </section>
+
+    
+    <section id="register" class="page section">
+      <div class="section-title">
+        <p class="eyebrow">Inscription</p>
+        <h2>Créer un compte</h2>
+      </div>
+      <form id="registerForm" class="form-card" novalidate>
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" placeholder="exemple@email.com" required />
+
+        <label for="regPassword">Mot de passe</label>
+        <input type="password" id="regPassword" placeholder="Minimum 6 caractères, 1 majuscule, 1 chiffre" required />
+        <small class="hint">Au moins 6 caractères, une majuscule et un chiffre</small>
+
+        <label for="regConfirm">Confirmer le mot de passe</label>
+        <input type="password" id="regConfirm" placeholder="Répéter le mot de passe" required />
+
+        <button type="submit">S'inscrire</button>
+        <p id="msgRegister" role="alert"></p>
+        <p class="form-link">Déjà un compte ? <a href="#" data-page="login">Se connecter</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 HM MOBILIER. Tous droits réservés.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
