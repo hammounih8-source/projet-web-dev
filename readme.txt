@@ -69,7 +69,7 @@ FONCTIONNALITÉS TECHNIQUES
 
 MEMBRES DU GROUPE
 ------------------
-[Insérer ici les noms et prénoms des membres]
+[hammouni hamza]
 
 Année universitaire : 2025/2026
 Module : Développement d'Applications Web
